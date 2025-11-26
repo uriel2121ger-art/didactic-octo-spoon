@@ -1,0 +1,4 @@
+QWidget { background: #f6f8fb; color: #1c2833; }
+QPushButton { background: #e9eef6; border: 1px solid #d5dce6; }
+QHeaderView::section { background: #eef2f7; }
+QTableWidget::item:selected { background: #d6e9ff; }

@@ -1,0 +1,72 @@
+/* Base QSS for POS Lupita */
+QWidget {
+    font-family: 'Segoe UI', 'Noto Sans', 'Inter', sans-serif;
+}
+QPushButton {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid #d0d4dc;
+    background: #e7ecf3;
+    color: #2c3e50;
+}
+QPushButton:hover { background: #dfe6ef; }
+QPushButton:pressed { background: #d1d9e6; }
+QPushButton:disabled { background: #c9ced6; color: #7f8c8d; }
+QPushButton.primary {
+    background: #2ecc71;
+    color: white;
+    border: 1px solid #27ae60;
+}
+QPushButton.primary:hover { background: #27ae60; }
+QPushButton.danger { background: #e74c3c; color: white; border: 1px solid #c0392b; }
+QLineEdit, QSpinBox, QDoubleSpinBox, QDateEdit, QPlainTextEdit, QTextEdit {
+    padding: 6px 8px;
+    border-radius: 8px;
+    border: 1px solid #cfd8dc;
+    background: #ffffff;
+}
+QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus, QDateEdit:focus, QPlainTextEdit:focus, QTextEdit:focus {
+    border: 1px solid #42a5f5;
+}
+QTableWidget {
+    background: #ffffff;
+    alternate-background-color: #f7f9fc;
+    gridline-color: #d0d5dd;
+    border-radius: 8px;
+}
+QHeaderView::section {
+    background: rgba(0,0,0,0.04);
+    padding: 6px;
+    border: none;
+    font-weight: 600;
+}
+QTableWidget::item:hover { background: #e8f0fe; }
+QTableWidget::item:selected { background: #d0e2ff; color: #1c2833; }
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+    margin: 2px;
+}
+QScrollBar::handle:vertical {
+    background: rgba(0,0,0,0.25);
+    border-radius: 5px;
+    min-height: 24px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+QGroupBox {
+    border: 1px solid #d6dce2;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 12px;
+    padding: 0 4px;
+    color: #34495e;
+}
+QTabWidget::pane { border: 1px solid #d0d5dd; border-radius: 8px; }
+QTabBar::tab { padding: 8px 14px; margin: 2px; border-radius: 6px; }
+QTabBar::tab:selected { background: #dfe6ef; }
